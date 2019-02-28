@@ -7,3 +7,6 @@ sudo apt-get install python-webpy python-opengl
 python server.py
 python client.py
 ```
+
+
+https://www.okahiro.info/gd/2016/10/05/post-1971/
