@@ -62,6 +62,7 @@ def run():
         values = read_values()
         x_angle = values[0]
         y_angle = values[1]
+        z_angle = values[2]
 
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT)
 
@@ -70,14 +71,15 @@ def run():
         glBegin(GL_LINES)
 
         glEnd()
+
         glPushMatrix()
         glRotate(float(x_angle), 1, 0, 0)
         glRotate(-float(y_angle), 0, 0, 1)
-
-        #glutWireTeapot(1)
-        glutSolidTeapot(1)
-
+#        glRotate(-float(z_angle), 0, 1, 0)
+        glutWireTeapot(1)
+        #glutSolidTeapot(1)
         glPopMatrix()
+
         pygame.display.flip()
 
 if __name__ == "__main__":
