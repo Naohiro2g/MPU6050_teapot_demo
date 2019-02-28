@@ -69,7 +69,37 @@ def run():
         glColor((1.,1.,1.))
         glLineWidth(1)
         glBegin(GL_LINES)
+        for x in range(-20, 25, 5):
+            glVertex3f(x/10.,-1,-1)
+            glVertex3f(x/10.,-1,1)
 
+        for x in range(-20, 25, 5):
+            glVertex3f(x/10.,-1, 1)
+            glVertex3f(x/10., 1, 1)
+
+        for z in range(-10, 15, 5):
+            glVertex3f(-2, -1, z/10.)
+            glVertex3f( 2, -1, z/10.)
+
+        for z in range(-10, 15, 5):
+            glVertex3f(-2, -1, z/10.)
+            glVertex3f(-2,  1, z/10.)
+
+        for z in range(-10, 15, 5):
+            glVertex3f( 2, -1, z/10.)
+            glVertex3f( 2,  1, z/10.)
+
+        for y in range(-10, 15, 5):
+            glVertex3f(-2, y/10., 1)
+            glVertex3f( 2, y/10., 1)
+
+        for y in range(-10, 15, 5):
+            glVertex3f(-2, y/10., 1)
+            glVertex3f(-2, y/10., -1)
+
+        for y in range(-10, 15, 5):
+            glVertex3f(2, y/10., 1)
+            glVertex3f(2, y/10., -1)
         glEnd()
 
         glPushMatrix()
