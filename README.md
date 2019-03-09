@@ -4,7 +4,7 @@ Pyrhon server-client working demo for MPU-6050 gyro to control the teapot.
 
 ```
 sudo apt-get install python-webpy python-opengl
-pip install pyopengl
+(pip install pyopengl) apt-get python-opengl is better
 python server.py
 python client.py
 ```
